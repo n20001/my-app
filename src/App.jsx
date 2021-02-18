@@ -13,7 +13,7 @@ class App extends React.Component {
     this.state = {
       isLoaded: false
     }
-    this.URI = '//api.open-notify.org/iss-now.json'
+    this.URI = 'https://api.wheretheiss.at/v1/satellites/25544'
   }
 
   componentDidMount () {
@@ -28,8 +28,8 @@ class App extends React.Component {
       .then(data =>
         this.setState({
           isLoaded: true,
-          lat: data.iss_position.latitude,
-          lng: data.iss_position.longitude
+          lat: data.latitude,
+          lng: data.longitude
         })
       )
   }
