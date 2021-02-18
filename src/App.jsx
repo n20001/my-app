@@ -13,7 +13,7 @@ class App extends React.Component {
     this.state = {
       isLoaded: false
     }
-    this.URI = 'http://api.open-notify.org/iss-now.json'
+    this.URI = '//api.open-notify.org/iss-now.json'
   }
 
   componentDidMount () {
